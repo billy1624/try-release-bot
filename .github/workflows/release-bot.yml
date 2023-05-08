@@ -15,7 +15,7 @@ jobs:
         with:
           token: ${{ github.token }}
           message: |
-            :tada: Released in [${releaseTag}](${releaseUrl}) :tada:
+            ### :tada: Released In [${releaseTag}](${releaseUrl}) :tada:
             
             Your participation is what makes us unique; your adoption is what drives us forward.  
             Thank you all in the Rust community for making SeaQL what it is today. :crab:  
