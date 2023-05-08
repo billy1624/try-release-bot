@@ -1,3 +1,5 @@
+name: Release Bot
+
 on:
   release:
     types: [published]
@@ -5,8 +7,11 @@ on:
 jobs:
   comment:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
       - uses: nflaig/release-comment-on-pr@v1
         with:
-          token: ${{ github.token }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           message: ":tada: Released in [${releaseTag}](${releaseUrl}) :crab:\n\nYour participation is what makes us unique; your adoption is what drives us forward.  Thank you all in the Rust community for making SeaQL what it is today.  You are also invited to shape it's future! Please star our repos, every ⭐ counts!"
