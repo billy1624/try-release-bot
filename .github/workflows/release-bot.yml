@@ -10,3 +10,4 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           message: ":tada: Released in [${releaseTag}](${releaseUrl}) :crab:\n\nYour participation is what makes us unique; your adoption is what drives us forward.  Thank you all in the Rust community for making SeaQL what it is today.  You are also invited to shape it's future! Please star our repos, every ⭐ counts!"
+
