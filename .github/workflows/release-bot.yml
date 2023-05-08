@@ -11,7 +11,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: nflaig/release-comment-on-pr@v1
+      - uses: billy1624/release-comment@master
         with:
           token: ${{ github.token }}
           message: |
